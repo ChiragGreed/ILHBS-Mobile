@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, SafeAreaView, StatusBar, Keybo
 import { styles } from './style/style';
 import { useRouter } from 'expo-router';
 import { EyeIcon, EyeOffIcon } from './style/style';
+import { airlineLoginApi } from "../../services/authApi"
 
 const AirlinePanelLoginScreen = () => {
     const [username, setUsername] = useState('');
@@ -11,7 +12,7 @@ const AirlinePanelLoginScreen = () => {
     const router = useRouter();
 
     const handleLogin = () => {
-        // TODO: wire up authentication logic
+        airlineLoginApi(username, password);
         console.log('Airline Panel Login:', { username, password });
     };
 
