@@ -16,5 +16,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "src/features/auth/screens/ReceiverLoginScreen/ReceiverLoginScreen.jsx", "src/features/auth/screens/ReceiverLoginScreen/style/style.js", "src/features/auth/screens/AirlineLoginScreen/style/style.js"  ]
 }
